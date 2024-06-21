@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AddIcon from "@mui/icons-material/Add";
 
 const initialState = { title: "", content: "" };
 
@@ -35,7 +36,9 @@ export default function InputArea({ onAddItem }) {
           placeholder="Take a note..."
           rows="3"
         />
-        <button>Add</button>
+        <button>
+          <AddIcon />
+        </button>
       </form>
     </div>
   );
